@@ -1,0 +1,111 @@
+const card_selection = [
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "50",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "5",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "16",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "49",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "8",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "8",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "3",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "29",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "48",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "28",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "42",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "9",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "31",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "27",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "34",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "4",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "10",
+  },
+  {
+    name: "place holder",
+    type: "place holder",
+    cost: "place holder",
+    stock: "20",
+  },
+];
+export { card_selection };
