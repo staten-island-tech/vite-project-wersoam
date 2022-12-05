@@ -1,2 +1,6 @@
 import "./style.css";
-import { card_selection } from "Array.js";
+import { cards } from "./array";
+cards
+  .filter((limited) => limited.stock < 10)
+  .forEach((card) => console.log(card.name));
+console.log(cards);
