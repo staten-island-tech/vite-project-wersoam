@@ -6,11 +6,11 @@ cards
 //array check working
 const domselector = {
   button: document.getElementById("input"),
+  box: document.getElementById("background"),
 };
-function color(background) {
-  document.body.style.backgroundColor = background;
+function theme() {
+  var box = document.body;
+  box.classList.toggle("light-mode");
 }
-domselector.button.addEventListener("click", function () {
-  color(rgb(155, 255, 222));
-});
-//why does it not work ahhhhh(theme changing in progress)
+//day 1 why does it not work ahhhhh(theme changing in progress)
+//day 2 trying to use on click now but its also not working
