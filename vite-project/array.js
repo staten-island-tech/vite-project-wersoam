@@ -9,13 +9,13 @@ const cards = [
     name: "packs of 6 cola",
     type: "food",
     stock: "5",
-    picture: "place holder",
+    picture: "cola.jpg",
   },
   {
     name: "copy paper",
     type: "common items",
     stock: "16",
-    picture: "place holder",
+    picture: "copy.jpg",
   },
   {
     name: "plastic cups",
@@ -39,7 +39,7 @@ const cards = [
     name: "copy machine",
     type: "common items",
     stock: "3",
-    picture: "place holder",
+    picture: "copy.jpg",
   },
   {
     name: "roasted nuts",
@@ -105,7 +105,7 @@ const cards = [
     name: "pizza plushie",
     type: "toy",
     stock: "20",
-    picture: "pizza plush.jpg",
+    picture: "pizza.jpg",
   },
 ];
 export { cards };
