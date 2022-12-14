@@ -9,16 +9,16 @@ body,
 
 :root {
   --white: #f5f5dc;
-  --light-blue: #2998ff;
   --dark-white: #deb887;
-  --light-red: #f87171;
-  --dark-red: #dc2626;
-  --gray: #adadad;
+  --light-cyan: #e0ffff;
+  --light-green: #e0ffe8;
+  --button1:#fff7e0;
+  --button2:  #e4ffff;
 
   /*Intentions */
-  --primary: var(--light-red);
-  -secon-dary: var(--dark-red);
-
+  --primary: var(--light-green);
+  --secondary: var(--light-cyan);
+  --theme: var(--button2);
   /*Typography */
   --h1: 7.594rem;
   --h2: 5.063rem;
@@ -26,21 +26,21 @@ body,
   --h4: 2.25rem;
   --h5: 1.5rem;
 }
-
+ 
 .bright {
 --primary: var(--dark-white);
 --secondary: var(--white);
 }
-.cool {
-  --primary: var(--light-red);
-  -secon-dary: var(--dark-red);
+.heat {
+  --primary: var(--light-green);
+  --secondary: var(--light-cyan);
 }
-.hero {
+.body {
   background-color: var(--primary);
 }
 .main {
   background-color: var(--secondary);
-  height: 90vh;
+  height: 88rem;
 }
 
 h1 {
@@ -71,17 +71,16 @@ h5 {
 .btn,
 .btn:link,
 .btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2rem;
   display: inline-block;
   margin: 1rem auto;
   font-size: 2rem;
   border: none;
-  border-radius: 10rem;
+  border-radius: 3rem;
   transition: all 0.2s;
+  background-color: var(--theme)
 }
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 0.5rem rgba(173, 173, 173, 0.2);
 }

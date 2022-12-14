@@ -21,19 +21,19 @@ const cards = [
     name: "plastic cups",
     type: "food",
     stock: "49",
-    picture: "place holder",
+    picture: "cup.jpg",
   },
   {
     name: "pens",
     type: "common items",
     stock: "8",
-    picture: "place holder",
+    picture: "pen.jpg",
   },
   {
     name: "pencils",
     type: "common items",
     stock: "8",
-    picture: "place holder",
+    picture: "pencil.jpg",
   },
   {
     name: "copy machine",
