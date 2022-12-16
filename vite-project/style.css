@@ -12,26 +12,19 @@ body,
   --dark-white: #deb887;
   --light-cyan: #e0ffff;
   --light-green: #e0ffe8;
-  --button1:#fff7e0;
-  --button2:  #e4ffff;
 
-  /*Intentions */
   --primary: var(--light-green);
   --secondary: var(--light-cyan);
-  --theme: var(--button2);
-  /*Typography */
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
-  --h5: 1.5rem;
+  --theme: var(--light-cyan);
+
 }
- 
+.coffee{--theme:var(--white)}
+.tropical{ --theme:var(--light-cyan)}
 .bright {
 --primary: var(--dark-white);
 --secondary: var(--white);
 }
-.heat {
+.Coral {
   --primary: var(--light-green);
   --secondary: var(--light-cyan);
 }
@@ -42,32 +35,11 @@ body,
   background-color: var(--secondary);
   height: 88rem;
 }
-
-h1 {
-  font-size: var(--h1);
-}
-h2 {
-  font-size: var(--h2);
-}
-
-h3 {
-  font-size: var(--h3);
-}
-
-h4 {
-  font-size: var(--h4);
-}
-
-h5 {
-  font-size: var(--h5);
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
+.head{
+  font-size: 8rem;
   text-align: center;
 }
+
 .btn,
 .btn:link,
 .btn:visited {

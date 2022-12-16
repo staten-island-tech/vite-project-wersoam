@@ -10,21 +10,21 @@ const dom = {
 };
 
 dom.button.addEventListener("click", function () {
-  if (document.body.classList.contains("cool")) {
+  if (document.body.classList.contains("Coral")) {
     document.body.classList.add("bright");
-    document.body.classList.remove("cool");
+    document.body.classList.remove("Coral");
   } else {
-    document.body.classList.add("cool");
+    document.body.classList.add("Coral");
     document.body.classList.remove("bright");
   }
 });
 dom.button.addEventListener("click", function () {
-  if (document.body.classList.contains("button1")) {
-    document.body.classList.add("button2");
-    document.body.classList.remove("button1");
+  if (document.body.classList.contains("tropical")) {
+    document.body.classList.add("coffee");
+    document.body.classList.remove("tropical");
   } else {
-    document.body.classList.add("button1");
-    document.body.classList.remove("button2");
+    document.body.classList.add("tropical");
+    document.body.classList.remove("coffee");
   }
 });
 //day 1 why does it not work ahhhhh(theme changing in progress)
