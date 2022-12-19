@@ -7,6 +7,9 @@ cards
 const dom = {
   button: document.querySelector(".btn"),
   box: document.querySelector("#background"),
+  toy: document.getElementById("toys"),
+  food: document.getElementById("food"),
+  supplies: document.getElementById("supplies"),
 };
 
 dom.button.addEventListener("click", function () {
@@ -31,3 +34,8 @@ dom.button.addEventListener("click", function () {
 //day 2 trying to use on click now but its also not working
 // day 3 why is background and style null now?
 // day 4 should have watched the video sooner
+
+// day 1 creating html
+document.createElement("div"){
+
+};

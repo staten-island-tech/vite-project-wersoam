@@ -5,6 +5,8 @@ body,
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: 'Comfortaa', cursive;
+
 }
 
 :root {
@@ -43,12 +45,12 @@ body,
 .btn,
 .btn:link,
 .btn:visited {
-  padding: 1.5rem 2rem;
+  padding: 2rem;
   display: inline-block;
   margin: 1rem auto;
   font-size: 2rem;
   border: none;
-  border-radius: 3rem;
+  border-radius: 1rem;
   transition: all 0.2s;
   background-color: var(--theme)
 }
