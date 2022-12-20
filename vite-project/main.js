@@ -10,6 +10,7 @@ const dom = {
   toy: document.getElementById("toys"),
   food: document.getElementById("food"),
   supplies: document.getElementById("supplies"),
+  div: document.querySelector("#box"),
 };
 
 dom.button.addEventListener("click", function () {
@@ -36,6 +37,22 @@ dom.button.addEventListener("click", function () {
 // day 4 should have watched the video sooner
 
 // day 1 creating html
-document.createElement("div"){
-
-};
+dom.toy.addEventListener("click", function () {
+  let display = cards
+    .filter((limited) => limited.type === "toy")
+    .forEach((card) => console.log(card.name));
+  display.insertAdjacentHTML("afterend");
+});
+dom.food.addEventListener("click", function () {
+  let display = cards
+    .filter((limited) => limited.type === "food")
+    .forEach((card) => console.log(card.name));
+  display.insertAdjacentHTML("afterend");
+});
+dom.supplies.addEventListener("click", function () {
+  let display = cards
+    .filter((limited) => limited.type === "common items")
+    .forEach((card) => console.log(card.name));
+  display.insertAdjacentHTML("afterend");
+});
+//<img src="imags/belt.jpg" alt="">
