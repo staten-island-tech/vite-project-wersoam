@@ -6,11 +6,11 @@ cards
 //array check working
 const dom = {
   button: document.querySelector(".btn"),
-  box: document.querySelector("#background"),
+  background: document.querySelector("#background"),
   toy: document.getElementById("toys"),
   food: document.getElementById("food"),
   supplies: document.getElementById("supplies"),
-  div: document.querySelector("#box"),
+  box: document.getElementById("box"),
 };
 
 dom.button.addEventListener("click", function () {
@@ -38,21 +38,44 @@ dom.button.addEventListener("click", function () {
 
 // day 1 creating html
 dom.toy.addEventListener("click", function () {
-  let display = cards
+  cards
     .filter((limited) => limited.type === "toy")
-    .forEach((card) => console.log(card.name));
-  display.insertAdjacentHTML("afterend");
+    .forEach((card) =>
+      dom.box.insertAdjacentHTML(
+        "afterend",
+        `<div class="parent">
+  <div class="img2"> <img src="${card.picture}" width ="300px" height="300px"> <h2>${card.name}</h2></div>
+  `
+      )
+    );
 });
 dom.food.addEventListener("click", function () {
-  let display = cards
+  cards
     .filter((limited) => limited.type === "food")
-    .forEach((card) => console.log(card.name));
-  display.insertAdjacentHTML("afterend");
+    .forEach((card) =>
+      dom.box.insertAdjacentHTML(
+        "afterend",
+        `<div class="parent">
+  <div class="img2"> <img src="${cards.picture}"> <h2>${cards.name}</h2></div>
+  `
+      )
+    );
 });
 dom.supplies.addEventListener("click", function () {
-  let display = cards
+  cards
     .filter((limited) => limited.type === "common items")
-    .forEach((card) => console.log(card.name));
-  display.insertAdjacentHTML("afterend");
+    .forEach((card) =>
+      dom.box.insertAdjacentHTML(
+        "afterend",
+        `<div class="parent">
+    <div class="img2"> <img src="${cards.picture}"> <h2>${cards.name}</h2></div>
+    `
+      )
+    );
 });
-//<img src="imags/belt.jpg" alt="">
+// dom.box.insertAdjacentHTML(
+//   "afterend",
+//   `<div class="parent">
+// <div class="img"><h2 class="text text1" >1st place</h2><img src="${card.picture}"> <h2>${card.name}</h2></div>
+// `
+// );

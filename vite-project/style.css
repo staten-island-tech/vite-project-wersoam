@@ -58,8 +58,11 @@ body,
   transform: translateY(-2px);
   box-shadow: 0 10px 0.5rem rgba(173, 173, 173, 0.2);
 }
-.parent{
+.parent {
+  font-size: 30px;
   display: flex;
   margin: 1rem;
 justify-content: space-around;
 text-align: center;}
+.img2 {border: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;}

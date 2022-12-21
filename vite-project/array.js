@@ -93,7 +93,7 @@ const cards = [
     name: "power ranger toy",
     type: "toy",
     stock: "4",
-    picture: "image/power ranger.png",
+    picture: "image/ranger.png",
   },
   {
     name: "ultraman figure",
