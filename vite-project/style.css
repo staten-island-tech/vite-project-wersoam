@@ -35,13 +35,19 @@ body,
 }
 .main {
   background-color: var(--secondary);
-  height: 88rem;
+  height: 200rem;
 }
 .head{
   font-size: 8rem;
   text-align: center;
 }
-
+.text{
+  font-size: 2rem;
+  text-align: center;
+  border: azure;
+  box-sizing: border-box;
+  
+}
 .btn,
 .btn:link,
 .btn:visited {
@@ -58,11 +64,11 @@ body,
   transform: translateY(-2px);
   box-shadow: 0 10px 0.5rem rgba(173, 173, 173, 0.2);
 }
-.parent {
+.id {
   font-size: 30px;
   display: flex;
+  length: 300px;
+  width: 300px;
   margin: 1rem;
 justify-content: space-around;
 text-align: center;}
-.img2 {border: 1px solid rgb(255, 255, 255);
-  box-sizing: border-box;}

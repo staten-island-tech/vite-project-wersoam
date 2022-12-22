@@ -11,6 +11,7 @@ const dom = {
   food: document.getElementById("food"),
   supplies: document.getElementById("supplies"),
   box: document.getElementById("box"),
+  display: document.querySelector("#text"),
 };
 
 dom.button.addEventListener("click", function () {
@@ -37,14 +38,16 @@ dom.button.addEventListener("click", function () {
 // day 4 should have watched the video sooner
 
 // day 1 creating html
+//day 3 html added, trying to delete after switching
 dom.toy.addEventListener("click", function () {
+  dom.display.remove();
   cards
     .filter((limited) => limited.type === "toy")
     .forEach((card) =>
       dom.box.insertAdjacentHTML(
         "afterend",
-        `<div class="parent">
-  <div class="img2"> <img src="${card.picture}" width ="300px" height="300px"> <h2>${card.name}</h2></div>
+        `
+  <div class="text"> <img src="${card.picture}" width ="300px" height="300px"> <h2>${card.name}:  only ${card.stock} left!</h2></div>
   `
       )
     );
@@ -55,9 +58,9 @@ dom.food.addEventListener("click", function () {
     .forEach((card) =>
       dom.box.insertAdjacentHTML(
         "afterend",
-        `<div class="parent">
-  <div class="img2"> <img src="${cards.picture}"> <h2>${cards.name}</h2></div>
-  `
+        `
+<div class="text"> <img src="${card.picture}" width ="300px" height="300px"> <h2>${card.name}:  only ${card.stock} left!</h2></div>
+`
       )
     );
 });
@@ -67,9 +70,9 @@ dom.supplies.addEventListener("click", function () {
     .forEach((card) =>
       dom.box.insertAdjacentHTML(
         "afterend",
-        `<div class="parent">
-    <div class="img2"> <img src="${cards.picture}"> <h2>${cards.name}</h2></div>
-    `
+        `
+<div class="text"> <img src="${card.picture}" width ="300px" height="300px"> <h2>${card.name}:  only ${card.stock} left!</h2></div>
+`
       )
     );
 });
