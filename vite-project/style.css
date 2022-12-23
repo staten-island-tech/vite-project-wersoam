@@ -71,4 +71,5 @@ body,
   width: 300px;
   margin: 1rem;
 justify-content: space-around;
-text-align: center;}
+text-align: center;
+justify-content: space-evenly;}

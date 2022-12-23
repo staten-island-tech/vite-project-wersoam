@@ -40,45 +40,53 @@ dom.button.addEventListener("click", function () {
 // day 1 creating html
 //day 3 html added, trying to delete after switching
 dom.toy.addEventListener("click", function () {
-  dom.display.remove();
-  cards
-    .filter((limited) => limited.type === "toy")
-    .forEach((card) =>
-      dom.box.insertAdjacentHTML(
-        "afterend",
-        `
-  <div class="text"> <img src="${card.picture}" width ="300px" height="300px"> <h2>${card.name}:  only ${card.stock} left!</h2></div>
-  `
-      )
-    );
+  dom.box.innerHTML = "";
+  show.toys();
 });
 dom.food.addEventListener("click", function () {
-  cards
-    .filter((limited) => limited.type === "food")
-    .forEach((card) =>
-      dom.box.insertAdjacentHTML(
-        "afterend",
-        `
-<div class="text"> <img src="${card.picture}" width ="300px" height="300px"> <h2>${card.name}:  only ${card.stock} left!</h2></div>
-`
-      )
-    );
+  dom.box.innerHTML = "";
+  show.eat();
 });
 dom.supplies.addEventListener("click", function () {
-  cards
-    .filter((limited) => limited.type === "common items")
-    .forEach((card) =>
-      dom.box.insertAdjacentHTML(
-        "afterend",
-        `
+  dom.box.innerHTML = "";
+  show.stuff();
+});
+const show = {
+  toys: function () {
+    cards
+      .filter((limited) => limited.type === "toy")
+      .forEach((card) =>
+        dom.box.insertAdjacentHTML(
+          "afterend",
+          `
 <div class="text"> <img src="${card.picture}" width ="300px" height="300px"> <h2>${card.name}:  only ${card.stock} left!</h2></div>
 `
-      )
-    );
-});
-// dom.box.insertAdjacentHTML(
-//   "afterend",
-//   `<div class="parent">
-// <div class="img"><h2 class="text text1" >1st place</h2><img src="${card.picture}"> <h2>${card.name}</h2></div>
-// `
-// );
+        )
+      );
+  },
+  eat: function () {
+    cards
+      .filter((limited) => limited.type === "food")
+      .forEach((card) =>
+        dom.box.insertAdjacentHTML(
+          "afterend",
+          `
+<div class="text"> <img src="${card.picture}" width ="300px" height="300px"> <h2>${card.name}:  only ${card.stock} left!</h2></div>
+`
+        )
+      );
+  },
+
+  stuff: function () {
+    cards
+      .filter((limited) => limited.type === "common items")
+      .forEach((card) =>
+        dom.box.insertAdjacentHTML(
+          "afterend",
+          `
+<div class="text"> <img src="${card.picture}" width ="300px" height="300px"> <h2>${card.name}:  only ${card.stock} left!</h2></div>
+`
+        )
+      );
+  },
+};
