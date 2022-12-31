@@ -35,7 +35,8 @@ body,
 }
 .main {
   background-color: var(--secondary);
-  height: 200rem;
+  height: 75rem;
+
 }
 .head{
   font-size: 8rem;
@@ -44,8 +45,10 @@ body,
 .text{
   font-size: 2rem;
   text-align: center;
-  border: azure;
-  box-sizing: border-box;
+  box-sizing: content-box;
+  background-color: #ffffff;
+  width: 300px;
+  box-shadow: 1px 1px 1px rgb(173, 173, 173);
   
 }
 .btn,
@@ -64,12 +67,17 @@ body,
   transform: translateY(-2px);
   box-shadow: 0 10px 0.5rem rgba(173, 173, 173, 0.2);
 }
-.id {
-  font-size: 30px;
-  display: flex;
-  length: 300px;
-  width: 300px;
+.box {
   margin: 1rem;
+  display: flex;
 justify-content: space-around;
 text-align: center;
-justify-content: space-evenly;}
+align-items: center;
+}
+.box2 {
+margin: 1rem;
+  display: flex;
+justify-content: space-around;
+text-align: center;
+align-items: center;
+}
