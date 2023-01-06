@@ -36,7 +36,6 @@ body,
 .main {
   background-color: var(--secondary);
   height: 75rem;
-
 }
 .head{
   font-size: 8rem;
